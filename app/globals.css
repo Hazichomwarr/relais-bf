@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core */
+  --background: #fbfaf7;
+  --foreground: #102a36;
+  --surface: #ffffff;
+  --surface-soft: #f2f6f4;
+  --border: #dbe5e1;
+  --muted: #607077;
+
+  /* RELAIS */
+  --relais-navy: #102f40;
+  --relais-navy-deep: #0a2230;
+  --relais-emerald: #16836c;
+  --relais-emerald-dark: #0f6b59;
+  --relais-emerald-soft: #e7f2ee;
+  --relais-cream: #f5f2e9;
+
+  /* Product accents */
+  --karmda: #c69a2f;
+  --lokari: #198787;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+
+  --color-relais-navy: var(--relais-navy);
+  --color-relais-navy-deep: var(--relais-navy-deep);
+  --color-relais-emerald: var(--relais-emerald);
+  --color-relais-emerald-dark: var(--relais-emerald-dark);
+  --color-relais-emerald-soft: var(--relais-emerald-soft);
+  --color-relais-cream: var(--relais-cream);
+
+  --color-karmda: var(--karmda);
+  --color-lokari: var(--lokari);
+
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+::selection {
+  background: var(--relais-emerald-soft);
+  color: var(--relais-navy-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--relais-emerald);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
