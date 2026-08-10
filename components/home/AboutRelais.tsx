@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
 import { companyStory, mission, vision, founder } from "@/content/company";
 
 export function AboutRelais() {
@@ -58,6 +59,12 @@ export function AboutRelais() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 lg:mt-12">
+          <Button href="/qui-sommes-nous" variant="ghost">
+            Découvrir notre histoire
+          </Button>
         </div>
       </Container>
     </Section>
