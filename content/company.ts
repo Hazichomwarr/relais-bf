@@ -88,7 +88,6 @@ export const founder = {
   name: "Hamza Mare",
   role: "Fondateur de RELAIS",
   paragraphs: [
-    "Passionné par le développement logiciel et l'entrepreneuriat, Hamza Mare a créé RELAIS avec l'ambition de construire des solutions numériques adaptées aux réalités des entreprises et organisations africaines.",
-    "Cette ambition s'appuie sur une double perspective : une expérience acquise à l'étranger et une connaissance fine des besoins des entreprises et organisations burkinabè. C'est cette combinaison qui guide la volonté de construire, depuis le Burkina Faso, une technologie durable et réellement utile à ses utilisateurs.",
+    "Passionné par le développement logiciel et l’entrepreneuriat, Hamza Mare a créé RELAIS avec l’ambition de construire des solutions numériques adaptées aux réalités des entreprises et organisations africaines. Son parcours entre les États-Unis et le Burkina Faso, ainsi que sa formation en psychologie, lui ont donné une attention particulière à la manière dont les personnes travaillent, adoptent de nouveaux outils et interagissent avec la technologie. C’est cette approche qui guide RELAIS dans la conception de solutions simples, utiles et pensées pour durer.",
   ],
 } satisfies Founder;
