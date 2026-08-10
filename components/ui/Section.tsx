@@ -9,15 +9,16 @@ const variantClasses: Record<SectionVariant, string> = {
   navy: "bg-relais-navy text-white",
 };
 
-type SectionProps = {
-  children: React.ReactNode;
+type SectionProps = React.ComponentPropsWithoutRef<"section"> & {
   variant?: SectionVariant;
-  className?: string;
 };
 
-export function Section({ children, variant = "default", className }: SectionProps) {
+export function Section({ children, variant = "default", className, ...props }: SectionProps) {
   return (
-    <section className={cn("py-16 sm:py-24", variantClasses[variant], className)}>
+    <section
+      className={cn("scroll-mt-24 py-16 sm:py-24", variantClasses[variant], className)}
+      {...props}
+    >
       {children}
     </section>
   );

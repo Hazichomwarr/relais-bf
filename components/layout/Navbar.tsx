@@ -10,11 +10,12 @@ import { RelaisLogo } from "./RelaisLogo";
 import { MobileNavigation } from "./MobileNavigation";
 
 export function isActiveHref(pathname: string, href: string) {
+  if (href.includes("#")) return false;
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-const CONTACT_HREF = "/contact";
+const CONTACT_HREF = "/#contact";
 
 export function Navbar() {
   const pathname = usePathname();

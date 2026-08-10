@@ -10,9 +10,24 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "RELAIS — Solutions numériques pour les entreprises burkinabè",
+  metadataBase: new URL("https://www.relaisbf.com"),
+  title: {
+    default: "RELAIS — Solutions numériques au Burkina Faso",
+    template: "%s | RELAIS",
+  },
   description:
     "RELAIS conçoit des logiciels, plateformes et solutions numériques adaptés aux entreprises, établissements et organisations au Burkina Faso.",
+  applicationName: "RELAIS",
+  creator: "RELAIS SARL",
+  publisher: "RELAIS SARL",
+  openGraph: {
+    type: "website",
+    locale: "fr_BF",
+    siteName: "RELAIS",
+    title: "RELAIS — Solutions numériques au Burkina Faso",
+    description:
+      "RELAIS conçoit des logiciels, plateformes et solutions numériques adaptés aux entreprises, établissements et organisations au Burkina Faso.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -19,7 +19,7 @@ const accentBarClasses: Record<SolutionAccent, string> = {
 
 export function SolutionsShowcase() {
   return (
-    <Section variant="soft">
+    <Section variant="soft" id="solutions">
       <Container>
         <SectionHeading
           eyebrow="Nos solutions"

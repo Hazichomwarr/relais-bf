@@ -5,7 +5,7 @@ import { companyStory, mission, vision, founder } from "@/content/company";
 
 export function AboutRelais() {
   return (
-    <Section variant="white">
+    <Section variant="white" id="qui-sommes-nous">
       <Container>
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-6">

@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
 import type { NavigationItem } from "@/content/navigation";
 import { isActiveHref } from "./Navbar";
 
-const CONTACT_HREF = "/contact";
+const CONTACT_HREF = "/#contact";
 
 type MobileNavigationProps = {
   items: readonly NavigationItem[];

@@ -40,10 +40,10 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button href="/solutions" variant="primary">
+              <Button href="/#solutions" variant="primary">
                 Découvrir nos solutions
               </Button>
-              <Button href="/contact" variant="ghost">
+              <Button href="/#contact" variant="ghost">
                 Parler à RELAIS
               </Button>
             </div>

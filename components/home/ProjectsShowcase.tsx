@@ -56,7 +56,7 @@ export function ProjectsShowcase() {
   const clientProjects = projects.filter((project) => project.kind === "client");
 
   return (
-    <Section variant="soft">
+    <Section variant="soft" id="realisations">
       <Container>
         <SectionHeading
           eyebrow="Nos réalisations"

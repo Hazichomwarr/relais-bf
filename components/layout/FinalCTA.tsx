@@ -1,10 +1,14 @@
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { contactChannels } from "@/content/contact";
 
 export function FinalCTA() {
+  const whatsapp = contactChannels.find((channel) => channel.label === "WhatsApp")!;
+  const email = contactChannels.find((channel) => channel.label === "Email")!;
+
   return (
-    <Section variant="navy">
+    <Section variant="navy" id="contact">
       <Container>
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
@@ -18,15 +22,20 @@ export function FinalCTA() {
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row lg:shrink-0">
-            <Button href="/contact" variant="secondary">
-              Parler à RELAIS
+            <Button
+              href={whatsapp.href}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Écrire sur WhatsApp
             </Button>
             <Button
-              href="/solutions"
+              href={email.href}
               variant="ghost"
               className="border-white/30 text-white hover:bg-white/10"
             >
-              Découvrir nos solutions
+              Envoyer un e-mail
             </Button>
           </div>
         </div>

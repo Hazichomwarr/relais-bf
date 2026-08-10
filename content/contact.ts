@@ -16,9 +16,14 @@ export const contactChannels: readonly ContactChannel[] = [
     href: "mailto:batchiy4@gmail.com",
   },
   {
-    label: "Téléphone / WhatsApp",
+    label: "Téléphone",
     value: "+226 75 77 28 83",
     href: "tel:+22675772883",
+  },
+  {
+    label: "WhatsApp",
+    value: "+226 75 77 28 83",
+    href: "https://wa.me/22675772883",
   },
 ];
 
