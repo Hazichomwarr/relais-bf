@@ -41,7 +41,7 @@ export function ServicesSection() {
         </div>
 
         <div className="mt-10">
-          <Button href="/#contact" variant="primary">
+          <Button href="/contact" variant="primary">
             Discuter de votre projet
           </Button>
         </div>

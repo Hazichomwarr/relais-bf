@@ -8,5 +8,5 @@ export const mainNavigation: NavigationItem[] = [
   { label: "Nos solutions", href: "/solutions" },
   { label: "Nos réalisations", href: "/realisations" },
   { label: "Qui sommes-nous", href: "/qui-sommes-nous" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];

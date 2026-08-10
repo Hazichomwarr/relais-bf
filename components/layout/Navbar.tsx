@@ -15,7 +15,7 @@ export function isActiveHref(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-const CONTACT_HREF = "/#contact";
+const CONTACT_HREF = "/contact";
 
 export function Navbar() {
   const pathname = usePathname();

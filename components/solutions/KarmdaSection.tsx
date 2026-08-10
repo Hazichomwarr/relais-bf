@@ -58,7 +58,7 @@ export function KarmdaSection() {
               </div>
             </div>
 
-            <Button href="/#contact" variant="primary" className="self-start">
+            <Button href="/contact" variant="primary" className="self-start">
               Parler à RELAIS
             </Button>
           </div>
