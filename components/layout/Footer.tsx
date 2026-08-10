@@ -46,7 +46,10 @@ export function Footer() {
             <ul className="mt-4 flex flex-col gap-3">
               {solutions.map((solution) => (
                 <li key={solution.slug}>
-                  <Link href="/#solutions" className={cn(linkClasses, "inline-flex items-center gap-2")}>
+                  <Link
+                    href={`/solutions#${solution.slug}`}
+                    className={cn(linkClasses, "inline-flex items-center gap-2")}
+                  >
                     {solution.name}
                     {solution.status === "development" && (
                       <span className="rounded-full border border-white/20 px-2 py-0.5 text-[11px] font-medium text-white/50">
