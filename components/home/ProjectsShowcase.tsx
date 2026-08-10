@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
 import { projects, type ProjectStatus } from "@/content/projects";
 import { lokariSolution } from "@/content/solutions";
 
@@ -150,6 +151,12 @@ export function ProjectsShowcase() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Button href="/realisations" variant="ghost">
+            Voir toutes nos réalisations
+          </Button>
         </div>
       </Container>
     </Section>
