@@ -11,7 +11,7 @@ export function RelaisLogo({ className }: RelaisLogoProps) {
       href="/"
       aria-label="RELAIS — Retour à l'accueil"
       className={cn(
-        "inline-flex items-center text-lg font-bold tracking-tight text-relais-navy sm:text-xl",
+        "inline-flex items-center text-lg font-bold tracking-tight text-current sm:text-xl",
         className
       )}
     >

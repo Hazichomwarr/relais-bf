@@ -24,7 +24,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur">
       <Container>
         <div className="flex h-18 items-center justify-between lg:h-20">
-          <RelaisLogo />
+          <RelaisLogo className="text-relais-navy" />
 
           <nav aria-label="Navigation principale" className="hidden lg:flex lg:items-center lg:gap-8">
             {links.map((item) => {

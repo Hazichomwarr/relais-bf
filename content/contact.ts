@@ -13,7 +13,7 @@ export const contactChannels: readonly ContactChannel[] = [
   {
     label: "Email",
     value: "contact@relaisbf.com",
-    href: "mailto:contact@relaisbf.com",
+    href: "mailto:batchiy4@gmail.com",
   },
   {
     label: "Téléphone / WhatsApp",
